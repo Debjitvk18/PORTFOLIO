@@ -1,5 +1,4 @@
-import React from 'react';
-import { Github, Linkedin, Mail, MapPin, Calendar } from 'lucide-react';
+import { MapPin, Calendar } from 'lucide-react';
 
 const Hero = () => {
   return (
@@ -29,12 +28,12 @@ const Hero = () => {
                       />
                     </div>
                   </div>
-                  
+
                   {/* Animated rings */}
                   <div className="absolute inset-0 rounded-full border-2 border-blue-500/30 animate-ping"></div>
                   <div className="absolute inset-0 rounded-full border border-teal-500/20 animate-pulse"></div>
                 </div>
-                
+
                 {/* Status indicator */}
                 <div className="absolute bottom-8 right-8 w-8 h-8 bg-green-500 rounded-full border-4 border-gray-900 animate-bounce shadow-lg">
                   <div className="w-full h-full bg-green-400 rounded-full animate-pulse"></div>
@@ -58,16 +57,17 @@ const Hero = () => {
                   <span className="inline-block animate-bounce delay-1000">s</span>
                   <span className="inline-block animate-bounce delay-1100">h</span>
                 </h1>
-                
+
                 <div className="text-2xl md:text-3xl mb-6 animate-slideInFromLeft delay-300">
                   <span className="block text-transparent bg-gradient-to-r from-blue-400 via-teal-400 to-purple-400 bg-clip-text animate-gradient-x">
                     Computer Science Student & Developer
                   </span>
                 </div>
-                
+
                 <p className="text-xl text-gray-300 mb-8 max-w-2xl leading-relaxed animate-fadeInUp delay-500">
-                  Motivated Computer Science student with strong fundamentals in programming, 
-                  data structures, and software development. Passionate about ML, IoT, and blockchain technology.
+                  Motivated Full Stack Developer Fresher with hands-on experience in building scalable web applications using React,
+                  Next.js, Node.js, Express, and MongoDB. Strong foundation in Data Structures, OOPs, REST APIs, and modern
+                  frontend development. Seeking opportunities as a Full Stack Developer Intern / SDE-1.
                 </p>
               </div>
 

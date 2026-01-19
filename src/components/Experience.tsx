@@ -1,8 +1,22 @@
-import React from 'react';
 import { MapPin, Calendar, Award } from 'lucide-react';
 
 const Experience = () => {
   const experiences = [
+    {
+      title: 'Full Stack Developer Intern',
+      company: 'PROVIS Technologies',
+      duration: 'Sept 2025 – Dec 2025',
+      location: 'Remote',
+      type: 'Internship',
+      description: 'Developed scalable web applications with modern tech stack and collaborated with cross-functional teams',
+      highlights: [
+        'Engineered responsive UI components using HTML, CSS, JavaScript',
+        'Debugged and optimized SvelteKit applications',
+        'Developed RESTful APIs with Node.js, Express.js, MongoDB',
+        'Built server-rendered pages using React and Next.js',
+        'Delivered features within tight deadlines'
+      ],
+    },
     {
       title: 'AI-ML Virtual Internship',
       company: 'EDUSKILL by AWS Academy',
@@ -48,12 +62,12 @@ const Experience = () => {
               {index !== experiences.length - 1 && (
                 <div className="absolute left-6 top-16 w-0.5 h-full bg-gradient-to-b from-blue-500 to-teal-500"></div>
               )}
-              
+
               <div className="flex items-start space-x-6 mb-12">
                 <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-blue-500 to-teal-500 rounded-full flex items-center justify-center shadow-lg">
                   <Award size={20} className="text-white" />
                 </div>
-                
+
                 <div className="flex-1 bg-gray-800 rounded-xl p-6 shadow-xl hover:shadow-2xl transition-shadow duration-300 border border-gray-700">
                   <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-4">
                     <div>
@@ -71,9 +85,9 @@ const Experience = () => {
                       </div>
                     </div>
                   </div>
-                  
+
                   <p className="text-gray-300 mb-4">{exp.description}</p>
-                  
+
                   <div className="flex flex-wrap gap-2">
                     {exp.highlights.map((highlight, hIndex) => (
                       <span
